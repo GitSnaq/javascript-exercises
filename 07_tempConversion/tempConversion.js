@@ -1,7 +1,8 @@
 const ftoc = function(fahrenheit) {
-  celcius = (fahrenheit-32)/2;
+  celcius = Math.round((((fahrenheit-32)*5)/9)*10)/10
   return celcius
 };
+
 
 const ctof = function(celcius) {
   fahrenheit = celcius*1.8+32;
