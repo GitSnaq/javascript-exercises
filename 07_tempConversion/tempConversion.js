@@ -5,9 +5,9 @@ const ftoc = function(fahrenheit) {
 
 
 const ctof = function(celcius) {
-  fahrenheit = celcius*1.8+32;
+  fahrenheit = Math.round((celcius*1.8+32)*10)/10
+  return fahrenheit
 };
-
 // Do not edit below this line
 module.exports = {
   ftoc,
